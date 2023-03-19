@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Wrapper } from './Styles';
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -7,13 +8,13 @@ function Counter() {
   }
   return (
     <div>
-      <button
+      <Wrapper
         onClick={() => {
           setCount(count + 1);
         }}
       >
         increment
-      </button>
+      </Wrapper>
     </div>
   );
 }
